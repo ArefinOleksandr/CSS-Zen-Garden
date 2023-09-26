@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@400;700&display=swap');
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: #fff;
+    font-family: 'Kanit';
+}
+body > img.bg-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh;
+    filter :brightness(.25) grayscale(1) opacity(.5) drop-shadow(-31px -79px 78px black);;
+    z-index: 1;
+}
+
+body > img.bg1{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    height: 100%
+
+}
+body > img.bg2{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+div.wrapper{
+    perspective: 1000px;
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 50vw
+}
+.select-design{
+    background: url('./img/layer.svg') no-repeat;
+    background-size: 100% 100%;
+    padding: 5%;
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    top: 30%;
+    transform: rotateY(40deg);
+    display: flex;
+    flex-direction: row;
+    transition: 1s all;
+}
+.select-design >div{
+    flex: 0 1 50%
+}
+.select-design  h1, .select-design h3, .select-design p {
+    margin: 0;
+}
+.label-text div {
+    overflow: hidden;
+    background: rgb(47,47,47);
+    background:linear-gradient(to bottom, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
+}
+.label-text div a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+.first-anim{
+    
+    animation: 15s label-text infinite;
+}
+.second-anim{
+    
+    animation: 10s label-text infinite;
+}
+.third-anim{
+    
+    animation: 7s label-text infinite;
+}
+.select-design::before{
+    left: -3%;
+    top: -90vh;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 90vh;
+    content: ' ';
+    background: url('./img/hook3.svg') no-repeat center bottom;
+    background-size: contain;
+}
+
+@keyframes label-text{
+    0%{
+        transform: translateX(100%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+    
+} 
+
+.click-select-design.active{
+    transform: rotateY(0deg);
+    top: 40%;
+}
+.css-zen{
+    width: 13vw;
+    height: 10vw;
+    top: 10%;
+    left: 40%;
+    transform: rotateY(0deg);
+    padding: 24px;
+    align-items: center;
+}
+.css-zen h1, .css-zen h2{
+    margin: 0;
+    text-align: center;
+}
+.css-zen h1{
+    font-weight: 700;
+    font-size: 2vw;
+}
+.css-zen h2{
+    font-weight: 400;
+    font-size: 1vw;
+}
+.css-zen::before{
+    left: 0
+}
+.click-css-zen.active{
+    top: 30%;
+    transform: scale(1.2);
+}
+.css-zen > div{
+    flex: 1 1 100%;
+}
+
+.right-wrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height:100vh;   
+    width: 50vw;
+    perspective: 1000px;
+    z-index: 3;
+}
+.requirements{
+    top: 50%;
+    transform: rotateY(330deg);
+}
+.requirements > div{
+    flex: 1 1 100%;
+}
+
+.the-road{
+    z-index: 3;
+    top: -30%;
+    transform: rotateY(325deg);
+}
+.the-road.active{
+    top: 27%;
+    transform: rotateY(390deg);
+}
+
+.download{
+    top: -10%;
+    flex-direction: column;
+}
+.download.active{
+    top: 3%;
+    transform: rotateY(-20deg);
+}
+
+
