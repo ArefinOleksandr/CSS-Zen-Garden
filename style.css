@@ -181,13 +181,19 @@ div.wrapper{
     top: 3%;
     transform: rotateY(-20deg);
 }
+.layer{
+    width: 100%;
+}
 h1{
+    width: 100%;
     font-size:1.875vw;
 }
 p{
+    width: 100%;
     font-size: 1.250vw;
 }
 a{
+    width: 100%;
     font-size: 1.25vw;
 }
 
