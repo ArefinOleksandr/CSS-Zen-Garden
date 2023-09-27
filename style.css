@@ -53,9 +53,8 @@ div.wrapper{
     transform: rotateY(40deg);
     display: flex;
     flex-direction: row;
-    transition: 1s all;
+    transition: all 1s;
     
-    width: -webkit-fill-available;
 }
 .select-design >div{
     flex: 0 1 50%
@@ -116,8 +115,6 @@ div.wrapper{
     top: 40%;
 }
 .css-zen{
-    width: 13vw;
-    height: 10vw;
     top: 10%;
     left: 40%;
     transform: rotateY(0deg);
@@ -183,19 +180,13 @@ div.wrapper{
     top: 3%;
     transform: rotateY(-20deg);
 }
-.layer{
-    width: 100%;
-}
 h1{
-    width: 100%;
     font-size:1.875vw;
 }
 p{
-    width: 100%;
     font-size: 1.250vw;
 }
 a{
-    width: 100%;
     font-size: 1.25vw;
 }
 
