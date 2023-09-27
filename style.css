@@ -54,6 +54,8 @@ div.wrapper{
     display: flex;
     flex-direction: row;
     transition: 1s all;
+    
+    width: -webkit-fill-available;
 }
 .select-design >div{
     flex: 0 1 50%
