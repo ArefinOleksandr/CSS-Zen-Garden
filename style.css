@@ -159,6 +159,7 @@ div.wrapper{
 }
 
 .the-road{
+    flex-direction: column;
     z-index: 3;
     top: -30%;
     transform: rotateY(325deg);
@@ -176,5 +177,17 @@ div.wrapper{
     top: 3%;
     transform: rotateY(-20deg);
 }
+h1{
+    font-size:1.875vw;
+}
+p{
+    font-size: 1.250vw;
+}
+a{
+    font-size: 1.25vw;
+}
 
 
+@media (max-width: 1280px) and (orientation: landscape){
+
+}
